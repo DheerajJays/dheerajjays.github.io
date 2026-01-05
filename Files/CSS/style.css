@@ -434,3 +434,52 @@ body {
   transform: translateZ(-200px);
   opacity: 0;
 }
+/* ===============================
+   MOBILE HEADER FIX (NO MENU)
+================================ */
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 0.3rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .nav nav {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav nav a {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  /* Theme toggle alignment */
+  .theme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 0.9rem;
+  }
+}
+.nav nav a {
+  transition: opacity 0.2s ease;
+}
+
+.nav nav a:hover {
+  opacity: 0.75;
+}
