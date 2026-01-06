@@ -531,3 +531,61 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* ===============================
+   EXPERIENCE – MOBILE FIX
+================================ */
+
+.experience-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.experience-org {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .experience-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .experience-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-card p {
+    font-size: 0.95rem;
+  }
+
+  .experience-list li {
+    font-size: 0.95rem;
+  }
+}
+p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.arch-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
