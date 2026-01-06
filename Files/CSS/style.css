@@ -483,3 +483,51 @@ body {
 .nav nav a:hover {
   opacity: 0.75;
 }
+/* ===============================
+   EXPERIENCE (INDEX PAGE)
+================================ */
+
+.experience-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.experience-link:hover {
+  text-decoration: underline;
+}
+.arch-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.experience-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.experience-org {
+  display: block;
+  margin: 0.5rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.experience-list {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.6rem;
+  color: var(--text-secondary);
+}
+html {
+  scroll-behavior: smooth;
+}
