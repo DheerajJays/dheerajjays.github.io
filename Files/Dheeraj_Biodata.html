@@ -198,6 +198,33 @@ table th{color:var(--gold);text-align:left}
     .actions{justify-content:center}
 }
 
+/* ---------- DOWNLOAD BUTTON BOTTOM ---------- */
+.download-bottom{
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.download-bottom button{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,var(--gold),#f5d76e);
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Mobile sticky button */
+@media(max-width:700px){
+    .download-bottom{
+        position:fixed;
+        bottom:15px;
+        left:0;
+        width:100%;
+        z-index:999;
+    }
+}
+
 /* ---------------- PRINT ---------------- */
 @media print{
     *{animation:none!important;transition:none!important}
@@ -207,6 +234,20 @@ table th{color:var(--gold);text-align:left}
     h1,h2{color:#000}
     .profile-pic{border:2px solid #000}
 }
+/* ---------- EDUCATION MOBILE FIX ---------- */
+.table-wrapper{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+@media(max-width:700px){
+    table{
+        min-width:600px;
+        font-size:14px;
+    }
+}
+
 </style>
 </head>
 
@@ -235,9 +276,6 @@ table th{color:var(--gold);text-align:left}
     </div>
 </header>
 
-<div class="actions">
-    <button onclick="window.print()">📄 Download PDF</button>
-</div>
 
 <section class="reveal">
 <h2>Personal Details</h2>
@@ -286,6 +324,7 @@ table th{color:var(--gold);text-align:left}
 
 <section class="reveal">
 <h2>Education</h2>
+<div class="table-wrapper">
 <table>
 <tr><th>Qualification</th><th>Institution</th><th>Year</th><th>Result</th></tr>
 <tr><td>MCA</td><td>Andhra University</td><td>2023–2025</td><td>Pursuing</td></tr>
@@ -294,6 +333,7 @@ table th{color:var(--gold);text-align:left}
 <tr><td>12th Grade</td><td>Bihar Board </td><td>2016–2018</td><td>61%</td></tr>
 <tr><td>10th Grade</td><td>Bihar Board</td><td>2016</td><td>61%</td></tr>
 </table>
+</div>
 </section>
 
 <section class="reveal">
@@ -324,6 +364,11 @@ table th{color:var(--gold);text-align:left}
 <img src="images/gallery/3.jpeg">
 </div>
 </section>
+
+<div class="download-bottom">
+    <button onclick="window.print()">📄 Download PDF</button>
+</div>
+
 
 <footer style="text-align:center;opacity:.6">
 © 2025 Dheeraj Kumar | Matrimonial Biodata
